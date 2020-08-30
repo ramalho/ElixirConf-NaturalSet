@@ -8,6 +8,18 @@ defmodule NaturalSetDemo.MixProject do
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps()
+
+      # Docs
+      name: "NaturalSetDemo",
+      source_url: "https://github.com/ramalho/ElixirConf-NaturalSet/natural_set_demo",
+      homepage_url: "https://hexdocs.pm/natural_set/api-reference.html",
+      docs: [
+        main: "Main Page Title", # The main page in the docs
+        logo: "https://raw.githubusercontent.com/ramalho/ElixirConf-NaturalSet/master/img/N0.png",
+        extras: ["README.md"]
+      ]
+  ]
+
     ]
   end
 
@@ -21,9 +33,8 @@ defmodule NaturalSetDemo.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
+      {:ex_doc, "~> 0.22", only: :dev, runtime: false},
       {:natural_set, "~> 0.2.1"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
 end
