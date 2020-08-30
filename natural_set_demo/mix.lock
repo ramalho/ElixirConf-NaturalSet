@@ -1,0 +1,3 @@
+%{
+  "natural_set": {:hex, :natural_set, "0.2.1", "e9f0c67827ebfb5bcacb99c5eeb9be9d42967d90c735ef9cf345bb88622c6686", [:mix], [], "hexpm", "295e1ec9c9c8ecdbe64a0000fd4c3d535231206fb82b5dd54b04a0f7b4059625"},
+}
