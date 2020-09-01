@@ -17,7 +17,7 @@ defmodule NaturalSetDemo.MixProject do
         logo: "img/N0.png",
         extras: ["README.md"]
       ]
-  ]
+    ]
   end
 
   # Run "mix help compile.app" to learn about applications.
@@ -31,7 +31,7 @@ defmodule NaturalSetDemo.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.22", only: :dev, runtime: false},
-      {:natural_set, "~> 0.2.1"},
+      {:natural_set, "~> 0.3.1"}
     ]
   end
 end

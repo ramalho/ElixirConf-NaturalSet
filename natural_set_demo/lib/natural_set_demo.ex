@@ -58,6 +58,8 @@ defmodule NaturalSetDemo do
       "65"
       iex> [65, 66, 67] |> to_string
       "ABC"
+      iex> :café |> to_string
+      "café"
       iex> MapSet.new |> to_string
       ** (Protocol.UndefinedError) protocol String.Chars not implemented for #MapSet<[]> of type MapSet (a struct). This protocol is implemented for the following type(s): NaturalSet, Float, DateTime, Time, List, Version.Requirement, Atom, Integer, Version, Date, BitString, NaiveDateTime, URI
 
@@ -70,5 +72,4 @@ defmodule NaturalSetDemo do
   defimpl String.Chars, for: NaturalSet do
     def to_string(natural_set), do: natural_set.bits |> inspect(base: :binary)
   end
-
 end
